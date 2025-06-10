@@ -12,6 +12,12 @@ SQL schema and scripts for a Production & Inventory management system, featuring
 * sql/04_aggregations.sql:
    - Calculates total units produced per product.
    - Calculates average on-hand inventory per product.
+* sql/05_subqueries.sql:
+   - Lists products priced above their supplier’s average price.
+   - Finds suppliers with no products currently listed.
+* sql/06_ctes.sql:
+   - Uses a CTE to summarize monthly production totals and filters for totals > 500.
+   - Uses stacked CTEs to compare each product’s latest inventory to its average daily production.
 
 # ERD
 The ERD diagram (assets/production_inventory_erd.png) illustrates the relationships between suppliers, products, production_runs, and inventory.
